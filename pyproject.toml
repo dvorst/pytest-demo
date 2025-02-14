@@ -1,0 +1,19 @@
+[project]
+name = "pytest-demo"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "snowflake-connector-python>=3.13.2",
+]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --cov --cov-report=lcov"
+pythonpath = [
+  "."
+]
+
